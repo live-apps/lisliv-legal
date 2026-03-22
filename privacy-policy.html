@@ -1,99 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lisliv Privacy Policy</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            line-height: 1.6;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            color: #333;
-            background-color: #fafafa;
-        }
-        .container {
-            background-color: white;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            color: #222;
-            border-bottom: 3px solid #007bff;
-            padding-bottom: 10px;
-            margin-bottom: 10px;
-        }
-        .last-updated {
-            color: #666;
-            font-size: 14px;
-            margin-bottom: 30px;
-        }
-        h2 {
-            color: #007bff;
-            margin-top: 30px;
-            margin-bottom: 15px;
-        }
-        p {
-            margin-bottom: 15px;
-            color: #555;
-        }
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .highlight {
-            background-color: #f0f8ff;
-            padding: 15px;
-            border-left: 4px solid #007bff;
-            margin: 20px 0;
-            border-radius: 4px;
-        }
-        .contact-section {
-            background-color: #f9f9f9;
-            padding: 20px;
-            border-radius: 6px;
-            margin-top: 30px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lisliv Privacy Policy</title>
+  <style>
+    :root {
+      --primary: #0d6efd;
+      --text-dark: #1f2937;
+      --text-light: #6b7280;
+      --bg: #f5f7fb;
+      --card-bg: #ffffff;
+      --border: #e5e7eb;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text-dark);
+      line-height: 1.7;
+    }
+
+    .wrapper {
+      max-width: 920px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      padding: 40px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--border);
+    }
+
+    header {
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    .last-updated {
+      margin-top: 8px;
+      font-size: 14px;
+      color: var(--text-light);
+    }
+
+    h2 {
+      margin-top: 32px;
+      font-size: 20px;
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    p {
+      margin: 12px 0;
+      color: #374151;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .info-box {
+      background: #f1f5ff;
+      border-left: 4px solid var(--primary);
+      padding: 16px;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+
+    .info-box p {
+      margin: 6px 0;
+    }
+
+    .section {
+      margin-bottom: 10px;
+    }
+
+    .contact {
+      margin-top: 40px;
+      padding: 20px;
+      border-radius: 10px;
+      background: #f9fafb;
+      border: 1px solid var(--border);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 13px;
+      color: var(--text-light);
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        padding: 24px;
+      }
+
+      h1 {
+        font-size: 26px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
+  <div class="wrapper">
+    <div class="card">
+      <header>
         <h1>Lisliv Privacy Policy</h1>
-        <p class="last-updated">Last updated: March 22, 2026</p>
+        <div class="last-updated">Last updated: March 22, 2026</div>
+      </header>
 
+      <section class="section">
         <h2>Overview</h2>
-        <p>Lisliv is a personal organizer app built with privacy at its core. We do not collect, store, or share your personal data.</p>
+        <p>
+          Lisliv is a personal organizer application designed with a privacy-first philosophy.
+          We do not collect, store, or share any personal data.
+        </p>
+      </section>
 
+      <section class="section">
         <h2>Data Storage</h2>
-        <p>All your data — tasks, medications, shopping lists, notes, and voice recordings — is stored exclusively on your device. We have no servers, no accounts, and no cloud sync.</p>
+        <p>
+          All your data — including tasks, medications, shopping lists, notes, and voice recordings —
+          is stored exclusively on your device. Lisliv does not use servers, accounts, or cloud synchronization.
+        </p>
+      </section>
 
+      <section class="section">
         <h2>Voice & AI Processing</h2>
-        <p>Lisliv uses AI to organize your voice input. Your voice is transcribed and processed by the AI provider you choose (Groq or Google Gemini) using your own API key. Your data is governed by the privacy policy of your chosen provider:</p>
-        <div class="highlight">
-            <p><strong>Groq:</strong> <a href="https://groq.com/privacy-policy" target="_blank">console.groq.com/privacy</a></p>
-            <p><strong>Google Gemini:</strong> <a href="https://ai.google.dev/terms" target="_blank">ai.google.dev/terms</a></p>
-        </div>
-        <p>We never see, access, or store your voice recordings or transcripts.</p>
+        <p>
+          Lisliv uses AI services to process voice input. Your voice is transcribed and processed
+          using the provider you select (Groq or Google Gemini) with your own API key.
+        </p>
 
+        <div class="info-box">
+          <p><strong>Groq:</strong> <a href="https://groq.com/privacy-policy" target="_blank">https://groq.com/privacy-policy</a></p>
+          <p><strong>Google Gemini:</strong> <a href="https://ai.google.dev/terms" target="_blank">https://ai.google.dev/terms</a></p>
+        </div>
+
+        <p>
+          Lisliv does not access, store, or transmit your voice recordings or transcripts.
+        </p>
+      </section>
+
+      <section class="section">
         <h2>API Keys</h2>
-        <p>Your API keys are stored securely on your device using Android's encrypted storage. We never transmit or access your keys.</p>
+        <p>
+          Your API keys are securely stored on your device using Android's encrypted storage.
+          Lisliv does not access or transmit your API keys.
+        </p>
+      </section>
 
+      <section class="section">
         <h2>Medications & Health Data</h2>
-        <p>Medication and health information you enter stays on your device only. We never access or transmit health data.</p>
+        <p>
+          Any medication or health-related information you enter remains strictly on your device.
+          Lisliv does not access, collect, or transmit health data.
+        </p>
+      </section>
 
-        <h2>No Ads, No Tracking</h2>
-        <p>Lisliv contains no advertisements and no analytics or tracking of any kind.</p>
+      <section class="section">
+        <h2>No Ads or Tracking</h2>
+        <p>
+          Lisliv contains no advertisements and does not use analytics, tracking technologies,
+          or third-party monitoring of any kind.
+        </p>
+      </section>
 
-        <div class="contact-section">
-            <h2>Contact</h2>
-            <p>Questions? Email us at: <a href="mailto:us.codehelp@gmail.com">us.codehelp@gmail.com</a></p>
-        </div>
+      <div class="contact">
+        <h2>Contact</h2>
+        <p>
+          For questions or concerns regarding this Privacy Policy, please contact us at:
+          <a href="mailto:us.codehelp@gmail.com">us.codehelp@gmail.com</a>
+        </p>
+      </div>
+
+      <footer>
+        © 2026 Lisliv. All rights reserved.
+      </footer>
     </div>
+  </div>
 </body>
 </html>
